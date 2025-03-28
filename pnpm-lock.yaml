@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@modular-forms/qwik':
-    specifier: 0.24.0
-    version: 0.24.0(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3)
+    specifier: 0.29.1
+    version: 0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3)(typescript@5.8.2)
   '@qwikest/icons':
     specifier: 0.0.13
     version: 0.0.13(@builder.io/qwik@1.7.3)
@@ -1423,15 +1423,18 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@modular-forms/qwik@0.24.0(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3):
-    resolution: {integrity: sha512-mF+cOw2lmiEjCf7odYW65d1gxp5ozqAbDfX5Z6yAt0wE7wsRHBZgi0YoXAh63vRCEcR5UMG/9kdTXj3KCjxhug==}
+  /@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3)(typescript@5.8.2):
+    resolution: {integrity: sha512-xJb8wZXHEL0ioM5TlDpHUrXE4VKDf5OZbSoMtzmew9aHUGMDfsIGzSim408LaHHXa233YB76RhQZZAmO5Pgitg==}
     peerDependencies:
-      '@builder.io/qwik': ^1.4.0
-      '@builder.io/qwik-city': ^1.4.0
+      '@builder.io/qwik': ^1.9.0 || ^2.0.0
+      '@builder.io/qwik-city': ^1.9.0 || ^2.0.0
     dependencies:
       '@builder.io/qwik': 1.7.3(@types/node@20.14.14)
       '@builder.io/qwik-city': 1.12.1(typescript@5.8.2)(vite@5.4.15)
-      decode-formdata: 0.7.2
+      decode-formdata: 0.8.0
+      valibot: 1.0.0(typescript@5.8.2)
+    transitivePeerDependencies:
+      - typescript
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -3275,8 +3278,8 @@ packages:
     dependencies:
       ms: 2.1.2
 
-  /decode-formdata@0.7.2:
-    resolution: {integrity: sha512-TaUPp8jmomdGWNind2R9MBIgZfYM4XSTebC+5d28dDx4k4BuZ5fiDvCutY0XQd2UJxrAHWq6CGXLmmbP5Ty8Vw==}
+  /decode-formdata@0.8.0:
+    resolution: {integrity: sha512-iUzDgnWsw5ToSkFY7VPFA5Gfph6ROoOxOB7Ybna4miUSzLZ4KaSJk6IAB2AdW6+C9vCVWhjjNA4gjT6wF3eZHQ==}
     dev: false
 
   /decode-named-character-reference@1.0.2:
