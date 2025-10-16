@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@modular-forms/qwik':
     specifier: 0.29.1
-    version: 0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3)(typescript@5.8.2)
+    version: 0.29.1(@builder.io/qwik-city@1.13.0)(@builder.io/qwik@1.7.3)(typescript@5.8.2)
   '@qwikest/icons':
     specifier: 0.0.13
     version: 0.0.13(@builder.io/qwik@1.7.3)
@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.7.3
     version: 1.7.3(@types/node@20.19.21)
   '@builder.io/qwik-city':
-    specifier: 1.12.1
-    version: 1.12.1(typescript@5.8.2)(vite@5.4.15)
+    specifier: 1.13.0
+    version: 1.13.0(typescript@5.8.2)(vite@5.4.15)
   '@playwright/test':
     specifier: 1.46.0
     version: 1.46.0
@@ -163,8 +163,8 @@ packages:
     hasBin: true
     dev: true
 
-  /@builder.io/qwik-city@1.12.1(typescript@5.8.2)(vite@5.4.15):
-    resolution: {integrity: sha512-YLW+33PZVoc4O30J99Fs3uNNpi7BszPzaITKoW66Sphju5Ptn6HDQkfnBu2sHFB0bh8hWLWatAjOM1HXg/C96Q==}
+  /@builder.io/qwik-city@1.13.0(typescript@5.8.2)(vite@5.4.15):
+    resolution: {integrity: sha512-CDo5/JBLyJkC8uWn/DO5SnhXzGPLr9ecbAprloQMwoDaYFh846DRXhD+dK1Sqoa84O40+dk3p5Zltf2SkXdV2w==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       vite: ^5
@@ -1230,7 +1230,7 @@ packages:
   /@mdx-js/mdx@3.0.1:
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.3
       '@types/hast': 3.0.4
       '@types/mdx': 2.0.13
@@ -1267,14 +1267,14 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.12.1)(@builder.io/qwik@1.7.3)(typescript@5.8.2):
+  /@modular-forms/qwik@0.29.1(@builder.io/qwik-city@1.13.0)(@builder.io/qwik@1.7.3)(typescript@5.8.2):
     resolution: {integrity: sha512-xJb8wZXHEL0ioM5TlDpHUrXE4VKDf5OZbSoMtzmew9aHUGMDfsIGzSim408LaHHXa233YB76RhQZZAmO5Pgitg==}
     peerDependencies:
       '@builder.io/qwik': ^1.9.0 || ^2.0.0
       '@builder.io/qwik-city': ^1.9.0 || ^2.0.0
     dependencies:
       '@builder.io/qwik': 1.7.3(@types/node@20.19.21)
-      '@builder.io/qwik-city': 1.12.1(typescript@5.8.2)(vite@5.4.15)
+      '@builder.io/qwik-city': 1.13.0(typescript@5.8.2)(vite@5.4.15)
       decode-formdata: 0.8.0
       valibot: 1.0.0(typescript@5.8.2)
     transitivePeerDependencies:
@@ -2627,6 +2627,8 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.11.3
+    dev: true
+    optional: true
 
   /acorn-jsx@5.3.2(acorn@8.15.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2634,7 +2636,6 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.15.0
-    dev: true
 
   /acorn-walk@8.3.2:
     resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
@@ -2645,12 +2646,12 @@ packages:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
 
   /acorn@8.15.0:
     resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -3945,7 +3946,7 @@ packages:
   /estree-util-attach-comments@3.0.0:
     resolution: {integrity: sha512-cKUwm/HUcTDsYh/9FgnuFqpfquUbwIqwKM26BVCGDPVgvaCl/nDCCjUfiLlx6lsEZ3Z4RFxNbOQ60pkaEwFxGw==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   /estree-util-build-jsx@2.2.2:
     resolution: {integrity: sha512-m56vOXcOBuaF+Igpb9OPAy7f9w9OIkb5yhjsZuaPm7HoGi4oTOQi0h2+yZ+AtKklYFZ+rPC4n0wYCJCEU1ONqg==}
@@ -4508,7 +4509,7 @@ packages:
   /hast-util-to-estree@3.1.0:
     resolution: {integrity: sha512-lfX5g6hqVh9kjS/B9E2gSkvHH4SZNiQFiqWS0x9fENzEl+8W12RqdRxX6d/Cwxi30tPQs3bIO+aolQJNp1bIyw==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.3
       '@types/hast': 3.0.4
       comma-separated-tokens: 2.0.3
@@ -4530,7 +4531,7 @@ packages:
   /hast-util-to-jsx-runtime@2.3.0:
     resolution: {integrity: sha512-H/y0+IWPdsLLS738P8tDnrQ8Z+dj12zQQ6WC11TIM21C8WFVoIxcqWXf2H3hiTVZjF1AWqoimGwrTWecWrnmRQ==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/hast': 3.0.4
       '@types/unist': 3.0.2
       comma-separated-tokens: 2.0.3
@@ -5446,7 +5447,7 @@ packages:
   /micromark-extension-mdx-expression@3.0.0:
     resolution: {integrity: sha512-sI0nwhUDz97xyzqJAbHQhp5TfaxEvZZZ2JDqUo+7NvyIYG6BZ5CPPqj2ogUoPJlmXHBnyZUzISg9+oUmU6tUjQ==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.1
       micromark-factory-space: 2.0.0
@@ -5476,7 +5477,7 @@ packages:
     resolution: {integrity: sha512-uvhhss8OGuzR4/N17L1JwvmJIpPhAd8oByMawEKx6NVdBCbesjH4t+vjEp3ZXft9DwvlKSD07fCeI44/N0Vf2w==}
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.1
@@ -5518,7 +5519,7 @@ packages:
   /micromark-extension-mdxjs-esm@3.0.0:
     resolution: {integrity: sha512-DJFl4ZqkErRpq/dAPyeWp15tGrcrrJho1hKK5uBS70BCtfrIFg81sqcTVu3Ta+KD1Tk5vAtBNElWxtAa+m8K9A==}
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.1
       micromark-util-character: 2.1.0
@@ -5546,8 +5547,8 @@ packages:
   /micromark-extension-mdxjs@3.0.0:
     resolution: {integrity: sha512-A873fJfhnJ2siZyUrJ31l34Uqwy4xIFmvPY1oj+Ean5PHcPBYzEsvqvWGaWcfEIr11O5Dlw3p2y0tZWpKHDejQ==}
     dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       micromark-extension-mdx-expression: 3.0.0
       micromark-extension-mdx-jsx: 3.0.0
       micromark-extension-mdx-md: 2.0.0
@@ -6447,6 +6448,7 @@ packages:
 
   /picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
+    dev: true
 
   /picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -7403,7 +7405,7 @@ packages:
       css-tree: 2.3.1
       css-what: 6.1.0
       csso: 5.0.5
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   /synchronous-promise@2.0.17:
     resolution: {integrity: sha512-AsS729u2RHUfEra9xJrE39peJcc2stq2+poBXX8bcM08Y6g9j/i/PUzwNQqkaJde7Ntg1TO7bSREbR5sdosQ+g==}
